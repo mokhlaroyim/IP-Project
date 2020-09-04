@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>   -->
+    <!-- <script src="fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.css"></script> -->
+    <script src="css/bootstrap-grid/bootstrap-grid.css"></script>    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/js.js"></script>
+    <title>Music</title>
+</head>
+    <!-- <header class="header">
+        <button class="hamburger">
+                <span></span>
+        </button>
+    <div class="sideNav">
+        <ul>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Genres</a>
+            </li>
+            <li>
+                <a href="#">Sign in</a>
+            </li>
+        </ul>
+    </div>
+        <div id="body-search">
+            <input type="search" placeholder="Search...">
+        </div>
+         <span id="close">&times</span>
+    <div class="h-header b-accent">
+        <div class="container-fluid nav-up">
+            <div class="row">
+				<div class="md-3 md3">
+					<div class="logo">
+                        <a href="#"><img src="img/version.svg" alt="Music MP3"></a>
+                    </div>
+				</div>                
+				<div class="md-6 align_center display_none">
+					<div class="list">
+						<ul>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Genres</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           		<div class="md-3 md3">
+					<div class="block-header">
+                        <div class="search">
+                            <a href="#"><i class="fa fa-search" id="stoggle"></i></a>
+                            <input type="search" placeholder="Search...">
+                        </div>  
+                    </div>
+                </div>
+                <div class="md-1 align_center">
+                    <a href="#"><i class="fas fa-user"></i></a>
+                </div>
+                </div>
+            </div>
+        </div>
+</header> -->
+<body>
+    <section id="header">
+        <div class="inner_header">
+            <div class="logo">
+                <img src="img/version.svg" alt="logo">
+            </div>
+            <div class="navbar_block">
+                <div class="navbar_ul">
+                    <ul id="ul">
+                        <li><a href="#" class="ul_a">Genres</a></li>
+                        <li><a href="#" class="ul_a">About</a></li>
+                        <!-- <li><a href="#" id="ul_a">Sign in</a></li> -->
+                        <li><a href="#" class="ul_a">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="navbar_search">
+                    <i class="fa fa-search search-icon" id="stoggle"></i>
+                    <input type="search" placeholder="Search" class="search_input">
+                </div>
+                <div id="close">&times</div>
+                <div class="hamburger">
+                    <span id="span"></span>
+                </div>
+
+                <div class="navbar_signin dropdown">
+                    <a href="#" class="dropbtn">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#" class="drp">Genres</a>
+                            <a href="#" class="drp">About</a>
+                        <a href="#" class="drp">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--------------------------------------Body------------------------------------>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 body-top">
+            <img src="img/mainpic.PNG" alt="Los Angeles" >
+                
+                <section class="nerdy-pen">
+                    <div class="b-inline-block"><!-- 
+                    	<h1 class="body-top-h1"></h1> -->
+                        <h1 class="nerdy-pen__text">
+                          <span
+                             class="txt-rotate"
+                             data-period="2000"
+                             data-rotate='[ "Listen your adorable songs", " Blues and ballad", "Classic and Jazz", "Any song you want!" ]'>
+                             </span>
+                        </h1>
+                    </div>
+                </section>
+        </div>
+
+        <div class="col-sm-6 music-type b-left">
+            <p>Top New Releases</p>
+        </div>
+         <div class="col-sm-6  music-type b-right">
+            <p>Popular</p>
+        </div>
+    </div>
+</div>
+
+<div class=" main">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-sm-6 music-active music-top-left ">
+                    <img src="img/3.PNG">
+            </div>
+                <div class="col-sm-6 music-active music-top-right">
+                        <img src="img/3.PNG">
+                </div>
+            <div class="col-sm-6 block-music-inactive">
+                 <div class="mobile-visible">Top New Releases</div>
+                <div class="border">
+                    <div class="music-inactive a-block">
+                            <img src="img/3.PNG">
+                    </div>
+                   <div class="b-block a-block">
+                        <div class="a-block p-right">
+                            <b id="a-name">Artist's name</b>
+                                <p>Name of a song</p>
+                        </div>
+                            <div class="music-info">
+                                <div class="a-block">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                    <div class="a-block">
+                                        <p style="color: #4F4F4F">385</p>
+                                    </div>
+                                        <div class="a-block">
+                                            <i class="fas fa-eye " style="color: #4F4F4F"></i>
+                                        </div>
+                                    <div class="a-block">
+                                        <i class="fas fa-share-alt" style="color: #2F80ED"></i>
+                                    </div>
+                                <div class="a-block" style="color: #4F4F4F">
+                                    <p>3:45</p>
+                                </div>
+                            </div>
+                    </div>    
+                </div> 
+                <div class="border">
+                    <div class="music-inactive a-block">
+                            <img src="img/3.PNG">
+                    </div>
+                   <div class="b-block a-block">
+                        <div class="a-block p-right">
+                            <b id="a-name">Artist's name</b>
+                                <p>Name of a song</p>
+                        </div>
+                            <div class="music-info">
+                                <div class="a-block">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                    <div class="a-block">
+                                        <p style="color: #4F4F4F">385</p>
+                                    </div>
+                                        <div class="a-block">
+                                            <i class="fas fa-eye " style="color: #4F4F4F"></i>
+                                        </div>
+                                    <div class="a-block">
+                                        <i class="fas fa-share-alt" style="color: #2F80ED"></i>
+                                    </div>
+                                <div class="a-block" style="color: #4F4F4F">
+                                    <p>3:45</p>
+                                </div>
+                            </div>
+                    </div>    
+                </div>
+                <p class="more">
+                    <a href=""> More...</a>
+                </p>
+            </div>
+
+        <div class="col-sm-6 block-music-inactive">
+                 <div class="mobile-visible">Popular</div>
+                <div class="border">
+                    <div class="music-inactive a-block">
+                            <img src="img/3.PNG">
+                    </div>
+                   <div class="b-block a-block">
+                        <div class="a-block p-right">
+                            <b id="a-name">Artist's name</b>
+                                <p>Name of a song</p>
+                        </div>
+                            <div class="music-info">
+                                <div class="a-block">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                    <div class="a-block">
+                                        <p style="color: #4F4F4F">385</p>
+                                    </div>
+                                        <div class="a-block">
+                                            <i class="fas fa-eye " style="color: #4F4F4F"></i>
+                                        </div>
+                                    <div class="a-block">
+                                        <i class="fas fa-share-alt" style="color: #2F80ED"></i>
+                                    </div>
+                                <div class="a-block" style="color: #4F4F4F">
+                                    <p>3:45</p>
+                                </div>
+                            </div>
+                    </div>    
+                </div>
+                <p class="more">
+                    <a href=""> More...</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------FOOTER------------------------------------>
+
+<footer>
+    <div class="layout">
+        <div class="f-footer">
+            <div class="container-fluid">
+                <div class="row f-padding">
+                    <div class="footer-info col-md-6 col-sm-12">
+                    <h2>OUR INFORMATION</h2>
+                        <div class="f-left-layout">
+                            <p>
+                                <i class="fa fa-map-marker"></i>
+                                Office : 9, Ziyolilar str.,<br>
+                                M.Ulugbek district,<br> Tashkent city<br>
+                            </p> 
+                            <br>
+                            <p>
+                                <i class="fa fa-address-card"></i>
+                                     Phone  : +998 71 289-99-99<br>
+                                     Fax    : +998 71 269-00-58<br>
+                                     Email  : info@inha.uz<br>
+                           </p>
+                        </div>
+                    </div>
+
+                    <div class="footer-signup col-md-6 col-sm-12">
+                        <h2> LEAVE MESSAGE </h2>
+                        <form action="#" method="get" id="signup" class="form">
+                            <!-- <div class="float-left">
+                                <p> Name*</p><p> Email*</p><p> Message*</p>
+                            </div> -->
+                            <div class="Input">
+                                <div class="field">
+                                    <label class="float-left">Name*</label>
+                                    <input type="text" placeholder="  Username" name="name" id="name">
+                                </div>
+                                <div class="field">
+                                    <label class="float-left">Email*</label>
+                                    <input type="email" placeholder="  user@example.com" name="email" id="email">
+                                </div>
+                                <div class="field"> 
+                                    <label class="float-left">Message*</label>
+                                    <textarea name="Message" placeholder=" Loremepsum............"  id="message"></textarea>
+                                </div>
+                                 <article class="f-button">
+                                    <button type="submit" form="signup" value="Sumbit">Send Message</button>
+                                </article>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+        <div class="copyright">
+            <i class="fa fa-copyright">  2018  Music </i>
+            <p>| Add Comment</p>
+        </div>
+</footer>
+
+<div class="content"></div>
+<link rel="stylesheet" href="css/bootstrap-grid/bootstrap-grid.css">
+<link rel="stylesheet" href="fontawesome/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+
+</body>
+</html>
